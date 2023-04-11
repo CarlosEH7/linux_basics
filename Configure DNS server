@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#install, start and enable firewalld
+sudo dnf install firewalld
+sudo systemctl start firewalld
+sudo systemctl enabel firewalld
+
+#install DNS server
+sudo dnf install bind bind-utils
